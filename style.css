@@ -5,6 +5,7 @@ html {
     font-size: 15px;
 }
 
+/* Type will scale with document */
 h1 {
     font-size: 5vw;
   }
@@ -12,10 +13,8 @@ h1 {
     font-size: 3vw;
   }
   h3 {
-    font-size: 1vw;
+    font-size: 2vw;
   }
-/* Type will scale with document */
-  
 
 /* MOBILE */
 body {
@@ -31,20 +30,41 @@ body {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr 2fr; /*Reactive sizing for these columns */
-    column-gap: 10rem /*Reactive sizing for space between the columns */
+    grid-template-columns: 1fr 1fr; /*Reactive sizing for these columns */
+    column-gap: 10% /*Reactive sizing for space between the columns */
 }
 
 .headerImage {
     width:100%
 }
 
-.headerItems {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/*Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
+.dropdownTitle {
+  display:inline
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/*Artist Images */
 .imageContainer {
     display: flex;
     width:100%;
@@ -64,9 +84,28 @@ nav {
       }
       
     /* Header */
-    /*No changes */
+    nav {
+      grid-template-columns: 1fr 2fr; /*Reactive sizing for these columns */
+   }
+
+    .dropdownTitle {
+      display:none;
+    }
+    
+    .dropdown-content {
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      /*align-items: center;*/
+      justify-content: space-between;
+      background-color: lightblue;
+      min-width: none;
+      box-shadow: none;
+      padding: none;
+      z-index: none;
+    }
   
-    /* Body Images */
+    /* Artist Images */
       .imageContainer {
           flex-direction: row;
       }
