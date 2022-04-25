@@ -136,18 +136,29 @@ nav {
   font-size:6vw;
 }
 
+/*Spacing */
+.spacing {
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
 /*Footer */
 .footerContainer {
   display:grid;
-  grid-template-columns: 5% 30% 65%;
+  grid-template-columns: 10% 80% 10%; /* Reactive sizing grid column */
+  background-color: grey;
 }
-.socialMediaLink {
+
+.iconsContainer { 
   grid-column-start: 2;
   grid-column-end: 3;
-  display:flex;
+  display:flex; /*Flex container for social media icons */
   justify-content: space-between;
+  
+  padding-top:2%;
+  padding-bottom:2%
 }
-  /* DESKTOP CHANGES*/ 
+  /****** DESKTOP CHANGES ******/ 
   @media only screen and (min-width: 500px) {
       
     /* Header */
@@ -200,7 +211,23 @@ nav {
     .about_h4 {
       font-size:1.5vw
     }
-  
+
+    /*Footer */
+    .footerContainer {
+      display:grid;
+      grid-template-columns: 10% 30% 60%; /* Reactive sizing grid column */
+      background-color: grey;
+    }
+    
+    .iconsContainer { 
+      grid-column-start: 2;
+      grid-column-end: 3;
+      display:flex; /*Flex container for social media icons */
+      justify-content: space-between;
+      
+      padding-top:2%;
+      padding-bottom:2%
+    }
   }
 
 
