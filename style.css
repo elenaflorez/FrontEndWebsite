@@ -137,7 +137,16 @@ nav {
 }
 
 /*Footer */
-
+.footerContainer {
+  display:grid;
+  grid-template-columns: 5% 30% 65%;
+}
+.socialMediaLink {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display:flex;
+  justify-content: space-between;
+}
   /* DESKTOP CHANGES*/ 
   @media only screen and (min-width: 500px) {
       
