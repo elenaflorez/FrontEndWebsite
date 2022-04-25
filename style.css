@@ -7,13 +7,16 @@ html {
 
 /* Type will scale with document */
 h1 {
-    font-size: 5vw;
+    font-size: 6vw;
   }
   h2 {
     font-size: 3vw;
   }
   h3 {
     font-size: 2vw;
+  }
+  h4 {
+    font-size:1.5vw;
   }
 
 /* MOBILE */
@@ -25,7 +28,8 @@ body {
 /* Header */
 .header {
     width: 100%;
-    position: relative
+    position: relative;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -64,6 +68,27 @@ nav {
   display: flex;
 }
 
+/*Banner Image */
+.bannerContainer {
+    position: relative;
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.bannerImage {
+  width:100%
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-size:6vw;
+}
+
 /*Artist Images */
 .imageContainer {
     display: flex;
@@ -77,11 +102,34 @@ nav {
     width:80%
 }
 
+/*About */
+.aboutGrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border:2px solid black;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+.aboutContainer {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  position: relative;
+  text-align: left;
+}
+
+.aboutText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:6vw;
+}
+
+/*Footer */
+
   /* DESKTOP CHANGES*/ 
   @media only screen and (min-width: 500px) {
-    body {
-        background-color: lightblue;
-      }
       
     /* Header */
     nav {
@@ -98,11 +146,15 @@ nav {
       width:100%;
       /*align-items: center;*/
       justify-content: space-between;
-      background-color: lightblue;
       min-width: none;
       box-shadow: none;
       padding: none;
       z-index: none;
+    }
+
+    /* Banner Image */ 
+    h1 {
+      font-size:5vw;
     }
   
     /* Artist Images */
