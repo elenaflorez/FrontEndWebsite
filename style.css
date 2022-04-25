@@ -2,10 +2,61 @@ body {
     background-color: white;
     
   }
-  .navbar { 
+
+/*HEADER */
+.header {
+      width: 100%;
+      position: relative
+  }
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*Reactive sizing for these columns */
+    column-gap: 10rem /*Reactive sizing for space between the columns */
+}
+
+.headerImage {
+    width:100%
+}
+
+.headerItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*BODY IMAGES */
+.imageContainer {
+    display: flex;
+    width:100%;
+    margin:auto;
+    justify-content: space-between;
+}
+
+.artistImage {
+    width:30%
+}
+
+
+
+.navbar { 
     display: flex; /*FLEXBAR */
     width:100%
   }
+
+  .nav-links {
+      padding: 28px 0;
+      margin: 0 15px;
+  }
+
+  .nav-links li {
+      display: inline-block;
+  }
+
+ 
+
+
+
   
   @media screen and (max-width: 700px) {
     body {
@@ -14,7 +65,17 @@ body {
     .navbar {   
         flex-direction: column;/* FLEXBAR - MAKE VERTICAL WHEN SMALL */
       }
+    
+    .imageContainer {
+        flex-direction: column;
+    }
+
+    .artistImage {
+        width:80%
+    }
   }
+
+
 
   html {
     font-size: 17px;
