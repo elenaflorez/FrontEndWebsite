@@ -42,7 +42,7 @@ body {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr; /*Reactive sizing for these columns */
+    grid-template-columns: 3fr 1fr; /*Reactive sizing for these columns */
     column-gap: 10% /*Reactive sizing for space between the columns */
 }
 
@@ -57,7 +57,12 @@ nav {
 }
 
 .dropdownTitle {
-  display:inline
+  display:inline;
+}
+
+.dropdownImage {
+  display:inline;
+  height:50%
 }
 
 .dropdown-content {
@@ -104,10 +109,26 @@ nav {
     flex-direction: column;
     padding-top:5%; /* Reactive padding size for different screen sizing */
     padding-bottom:5%;
+    align-items: center;
 }
 
 .artistImage {
-    width:80%
+    width:80%;
+    margin:2%;
+}
+
+.artistText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  font-size:6vw;
+  display:none
+}
+
+.artistText:hover {
+  display:block
 }
 
 /*About */
@@ -147,6 +168,7 @@ nav {
   display:grid;
   grid-template-columns: 10% 80% 10%; /* Reactive sizing grid column */
   background-color: grey;
+  height:10%;
 }
 
 .iconsContainer { 
@@ -154,9 +176,18 @@ nav {
   grid-column-end: 3;
   display:flex; /*Flex container for social media icons */
   justify-content: space-between;
-  
   padding-top:2%;
-  padding-bottom:2%
+  padding-bottom:2%;
+  /*height:10%*/
+}
+
+.iconImage {
+  width:50%
+}
+
+.icon {
+  height:50%;
+  text-align:center;
 }
   /****** DESKTOP CHANGES ******/ 
   @media only screen and (min-width: 500px) {
@@ -171,6 +202,7 @@ nav {
     }
     
     .dropdown-content {
+      background-color: white;
       display: flex;
       flex-direction: row;
       width:100%;
@@ -215,19 +247,10 @@ nav {
     /*Footer */
     .footerContainer {
       display:grid;
-      grid-template-columns: 10% 30% 60%; /* Reactive sizing grid column */
+      grid-template-columns: 10% 20% 70%; /* Reactive sizing grid column */
       background-color: grey;
     }
     
-    .iconsContainer { 
-      grid-column-start: 2;
-      grid-column-end: 3;
-      display:flex; /*Flex container for social media icons */
-      justify-content: space-between;
-      
-      padding-top:2%;
-      padding-bottom:2%
-    }
   }
 
 
