@@ -1,7 +1,19 @@
 
 
 /* REGARDLESS OF SIZE */
-  
+html {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  h3 {
+    font-size: 1vw;
+  }
 /* Type will scale with document */
   
 
@@ -11,108 +23,58 @@ body {
     
   }
 
-html {
-    font-size: 10px;
+/* Header */
+.header {
+    width: 100%;
+    position: relative
 }
 
-h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*Reactive sizing for these columns */
+    column-gap: 10rem /*Reactive sizing for space between the columns */
+}
 
-  /* DESKTOP */ 
+.headerImage {
+    width:100%
+}
+
+.headerItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imageContainer {
+    display: flex;
+    width:100%;
+    margin:auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.artistImage {
+    width:80%
+}
+
+  /* DESKTOP CHANGES*/ 
   @media only screen and (min-width: 500px) {
     body {
         background-color: lightblue;
       }
-      html {
-        font-size: 17px;
-    }
-
-    h1 {
-        font-size: 3rem;
-      }
-      h2 {
-        font-size: 2.5rem;
-      }
-      h3 {
-        font-size: 2rem;
-      }
       
     /* Header */
-    .header {
-        width: 100%;
-        position: relative
-    }
+    /*No changes */
   
-  nav {
-      display: grid;
-      grid-template-columns: 1fr 2fr; /*Reactive sizing for these columns */
-      column-gap: 10rem /*Reactive sizing for space between the columns */
-  }
-  
-  .headerImage {
-      width:100%
-  }
-  
-  .headerItems {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  }
-  
-  /* Body Images */
-  .imageContainer {
-      display: flex;
-      width:100%;
-      margin:auto;
-      justify-content: space-between;
-  }
-  
-  .artistImage {
-      width:30%
-  }
-  }
-
-
-
-
-
-
-.navbar { 
-    display: flex; /*FLEXBAR */
-    width:100%
-  }
-
-  .nav-links {
-      padding: 28px 0;
-      margin: 0 15px;
-  }
-
-  .nav-links li {
-      display: inline-block;
-  }
-  
-  @media screen and (max-width: 700px) {
-    body {
-      background-color: white;
-    }
-    .navbar {   
-        flex-direction: column;/* FLEXBAR - MAKE VERTICAL WHEN SMALL */
-      }
-    
+    /* Body Images */
       .imageContainer {
-        flex-direction: column;
-    }
+          flex-direction: row;
+      }
 
-    .artistImage {
-        width:80%
-    }
+      .artistImage {
+          width:30%
+      }
+  
   }
 
 
