@@ -42,6 +42,10 @@ h1 {
     font-size:3vw;
   }
 
+  blockquote {
+    color: rgb(87, 87, 87);
+  }
+
 /* MOBILE */
 body {
     background-color: white;
@@ -230,13 +234,13 @@ nav {
   text-align:center;
 }
 
-/***ARTIST PAGE ***/
-.ArtistBodyWrapper {
+/*** ARTIST PAGE ***/
+.PageWrapper {
   display: grid;
   grid-template-columns: 10% 80% 10%;
 }
 
-.ArtistBodyContent {
+.BodyContent {
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -245,7 +249,32 @@ nav {
   width:100%
 }
 
-  /****** DESKTOP CHANGES ******/ 
+/*** DONATE PAGE ***/
+.donateWrapper {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+
+.donateBodyContent {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.descriptionContainer {
+  padding-top:10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer {
+  padding-top:10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align:left;
+}
+
+  /****** TABLET/DESKTOP CHANGES ******/ 
   @media only screen and (min-width: 500px) {
       
     /* Header */
@@ -272,7 +301,7 @@ nav {
 
     /* Banner Image */ 
     h1 {
-      font-size:5vw;
+      font-size:6vw;
     }
   
     /* Artist Images */
@@ -294,11 +323,11 @@ nav {
     }
 
     .about_h2 {
-      font-size:3vw;
+      font-size:3.5vw;
     }
 
     .about_h3 {
-      font-size:2vw;
+      font-size:2.5vw;
     }
   
     .about_p {
@@ -316,7 +345,30 @@ nav {
     .ArtistFocusImage {
       width:80%;
     }
-    
+
+    /*** DONATE PAGE ***/
+    .donateWrapper {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+    }
+  }
+
+  /****** DESKTOP ONLY CHANGES ******/ 
+  @media only screen and (min-width: 1000px) {
+    h1 {
+      font-size:4vw;
+    }
+    .about_h2 {
+      font-size:3vw;
+    }
+
+    .about_h3 {
+      font-size:1.5vw;
+    }
+  
+    .about_p {
+      font-size:1vw
+    }
   }
 
 
