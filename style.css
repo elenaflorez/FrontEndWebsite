@@ -3,7 +3,14 @@
 /* REGARDLESS OF SIZE */
 html {
     font-size: 15px;
+    font-family: sans-serif;
 }
+
+a {
+  color:#4b4b4b; 
+  text-decoration:none
+}
+
 
 /* Type will scale with document */
 h1 {
@@ -19,11 +26,15 @@ h1 {
     font-size:1.5vw;
   }
 
+  p {
+    font-size:1.5vw
+  }
+
   .about_h2 {
     font-size:4vw;
   }
 
-  .about_h4 {
+  .about_p {
     font-size:3vw
   }
 
@@ -225,7 +236,8 @@ nav {
       }
 
       .artistImage {
-          width:30%
+          max-width:400px;
+          min-width:100px;
       }
 
     /*About */
@@ -240,7 +252,7 @@ nav {
       font-size:3vw;
     }
   
-    .about_h4 {
+    .about_p {
       font-size:1.5vw
     }
 
