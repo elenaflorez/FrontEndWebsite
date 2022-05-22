@@ -288,6 +288,22 @@ input[type=text] {
   box-sizing: border-box;
 }
 
+/*** NEWS PAGE ***/
+.newsContainer {
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+.newsImageContainer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.newsImage {
+  width:100%
+}
+.newsDescriptionContainer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
   /****** TABLET/DESKTOP CHANGES ******/ 
   @media only screen and (min-width: 500px) {
       
