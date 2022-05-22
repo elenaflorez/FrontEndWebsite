@@ -6,11 +6,11 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<body>
+<body class="wrapper">
 
   <header class="header">
     <nav>
-      <img class="headerImage" src="Images/logo.png" alt="contour556 logo" />
+      <a href="home.html"><img class="headerImage" src="Images/logo.png" alt="contour556 logo" /></a>
       <nav class="dropdown">
         <div class="dropdownTitle">
           <h2>MENU</h2>
@@ -36,7 +36,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="mainwrapper">
     <!-- BANNER -->
     <section class="bannerContainer">
       <figure>
@@ -51,23 +51,18 @@
     <!-- ARTIST IMAGES -->
 
     <section class="imageContainer">
-      <article>
-        <figure>
-          <img class="artistImage" src="Images/HitPrint!.jpeg" alt="Hit Print!" />
-          <figcaption>Artist in focus</figcaption>
-        </figure>
-        <p>Text</p>
-      </article>
-      
-      <figure>
+      <figure class="alignArtist">
         <img class="artistImage" src="Images/Reticulum.jpeg" alt="Reticulum" />
-        <figcaption>Artist in focus</figcaption>
+        <figcaption>Commission - 'Reticulum' by Michael Sollis</figcaption>
       </figure>
-      <figure>
+      <a href="AdisonAdler.html"><figure class="alignArtist">
+        <img class="artistImage" src="Images/HitPrint!.jpeg" alt="Hit Print!" />
+        <figcaption>Commission - 'Hit Print!'' by Alison Adler (see more)</figcaption>
+      </figure></a>
+      <figure class="alignArtist">
         <img class="artistImage" src="Images/Portrait.jpg" alt="Portrait" />
-        <figcaption>Artist in focus</figcaption>
+        <figcaption>Commission - 'Portrait' by Sammy Hawker</figcaption>
       </figure>
-      
     </section>
 
     <!--ABOUT THE FESTIVAL-->
@@ -87,12 +82,12 @@
   </main>
 
   <footer class="footerContainer">
-      <nav class="iconsContainer">
-        <a class="icon"><img class="iconImage" src="Images/Facebook.png" alt="Facebook" /> </a>
-        <a class="icon"><img class="iconImage" src="Images/Twitter.png" alt="Twitter" /> </a>
-        <a class="icon"><img class="iconImage" src="Images/Instagram.png" alt="Instagram" /> </a>
-      </nav>
-  </footer>
+    <nav class="iconsContainer">
+      <a class="icon"><img class="iconImage" src="Images/Facebook.png" alt="Facebook" /> </a>
+      <a class="icon"><img class="iconImage" src="Images/Twitter.png" alt="Twitter" /> </a>
+      <a class="icon"><img class="iconImage" src="Images/Instagram.png" alt="Instagram" /> </a>
+    </nav>
+</footer>
 </body>
 
 </html>

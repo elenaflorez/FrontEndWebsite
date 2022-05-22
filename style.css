@@ -27,7 +27,7 @@ h1 {
   }
 
   p {
-    font-size:1.5vw
+    font-size:1vw
   }
 
   .about_h2 {
@@ -36,6 +36,10 @@ h1 {
 
   .about_p {
     font-size:3vw
+  }
+
+  .about_h3 {
+    font-size:3vw;
   }
 
 /* MOBILE */
@@ -51,6 +55,8 @@ body {
     padding-bottom: 20px;
 }
 
+
+
 nav {
     display: grid;
     grid-template-columns: 3fr 1fr; /*Reactive sizing for these columns */
@@ -61,6 +67,14 @@ nav {
     width:100%
 }
 
+/*Main */
+.mainwrapper {
+  padding-bottom: 2.5rem; 
+}
+.wrapper {
+  position: relative;
+  min-height: 80vh;
+}
 /*Dropdown */
 .dropdown {
   position: relative;
@@ -123,6 +137,18 @@ nav {
     align-items: center;
 }
 
+
+.ArtistBox {
+  display: grid;
+  height: 100%;
+}
+
+.alignArtist {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
 .artistImage {
     width:80%;
     margin:2%;
@@ -176,10 +202,13 @@ nav {
 
 /*Footer */
 .footerContainer {
+  position:absolute;
+  bottom:0;
+  width:100%;
   display:grid;
   grid-template-columns: 10% 80% 10%; /* Reactive sizing grid column */
   background-color: grey;
-  height:10%;
+  height: 2.5rem; 
 }
 
 .iconsContainer { 
@@ -189,17 +218,33 @@ nav {
   justify-content: space-between;
   padding-top:2%;
   padding-bottom:2%;
-  /*height:10%*/
+  height:10%
 }
 
 .iconImage {
-  width:50%
+  height:30px;
 }
 
 .icon {
   height:50%;
   text-align:center;
 }
+
+/***ARTIST PAGE ***/
+.ArtistBodyWrapper {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.ArtistBodyContent {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.ArtistFocusImage {
+  width:100%
+}
+
   /****** DESKTOP CHANGES ******/ 
   @media only screen and (min-width: 500px) {
       
@@ -251,6 +296,10 @@ nav {
     .about_h2 {
       font-size:3vw;
     }
+
+    .about_h3 {
+      font-size:2vw;
+    }
   
     .about_p {
       font-size:1.5vw
@@ -261,6 +310,11 @@ nav {
       display:grid;
       grid-template-columns: 10% 20% 70%; /* Reactive sizing grid column */
       background-color: grey;
+    }
+
+    /*** ARTIST PAGE ***/
+    .ArtistFocusImage {
+      width:80%;
     }
     
   }
