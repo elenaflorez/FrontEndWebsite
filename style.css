@@ -68,6 +68,8 @@ nav {
 }
 
 .headerImage {
+
+  padding-top:10px;
     width:100%
 }
 
@@ -78,6 +80,7 @@ nav {
 .wrapper {
   position: relative;
   min-height: 80vh;
+  width:100%;
 }
 /*Dropdown */
 .dropdown {
@@ -267,11 +270,22 @@ nav {
 }
 
 .formContainer {
-  padding-top:10%;
+  padding-top:5%;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align:left;
+}
+
+form {
+  width:100%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
   /****** TABLET/DESKTOP CHANGES ******/ 
@@ -351,6 +365,10 @@ nav {
       display: grid;
       grid-template-columns: 20% 60% 20%;
     }
+
+    form {
+      width:80%;
+    }
   }
 
   /****** DESKTOP ONLY CHANGES ******/ 
@@ -368,6 +386,10 @@ nav {
   
     .about_p {
       font-size:1vw
+    }
+
+    form {
+      width:50%;
     }
   }
 

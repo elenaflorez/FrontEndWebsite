@@ -8,33 +8,35 @@
 
 <body class="wrapper">
 
-  <header class="header">
-    <nav>
-      <a href="home.html"><img class="headerImage" src="Images/logo.png" alt="contour556 logo" /></a>
-      <nav class="dropdown">
-        <div class="dropdownTitle">
-          <h2>MENU</h2>
+    <header class="header PageWrapper">
+        <div class="BodyContent">
+          <nav>
+              <a href="home.html"><img class="headerImage" src="Images/logo.png" alt="contour556 logo" /></a>
+              <nav class="dropdown">
+                <div class="dropdownTitle">
+                  <h2>MENU</h2>
+                </div>
+                <div class="dropdown-content">
+                    <a href="">
+                      <h3>About Us</h3>
+                    </a>
+                    <a href="donate.html">
+                      <h3>Donate</h3>
+                    </a>
+                    <a href="">
+                      <h3>People</h3>
+                    </a>
+                    <a href="">
+                      <h3>COVID 19</h3>
+                    </a>
+                    <a href="">
+                      <h3>News</h3>
+                    </a>
+                  </div>
+              </nav>
+            </nav>
         </div>
-        <div class="dropdown-content">
-          <a href="">
-            <h3>About Us</h3>
-          </a>
-          <a href="">
-            <h3>DONATE</h3>
-          </a>
-          <a href="">
-            <h3>People</h3>
-          </a>
-          <a href="">
-            <h3>COVID 19</h3>
-          </a>
-          <a href="">
-            <h3>News</h3>
-          </a>
-        </div>
-      </nav>
-    </nav>
-  </header>
+    </header>
 
   <main class="mainwrapper donateWrapper">
       <section class="donateBodyContent">
@@ -80,12 +82,24 @@
             </p>
           </article>
           <article class="formContainer">
-            <form style="display:flexbox; justify-content:center;">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit">
+            <form>
+                <label for="amount"><p class="about_p">Amount:</p></label>
+                <input type="text" id="amount" name="amount"><br>
+                <label for="fname"><p class="about_p">First name:</p></label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname"><p class="about_p">Last name:</p></label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email"><p class="about_p">Email:</p></label>
+                <input type="text" id="email" name="email"><br>
+                <label for="phone"><p class="about_p">Phone:</p></label>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="address"><p class="about_p">Address:</p></label>
+                <input type="text" id="address" name="address"><br>
+                <input type="checkbox" id="mailList" name="mailList" value="Would you like to be on our contact list?">
+                <label for="mailList">Yes</label><br>
+                <label for="message"><p class="about_p">Message:</p></label>
+                <input type="text" id="message" name="message"><br>
+                <input type="submit" value="Donate">
               </form>
           </article>
       </section>
