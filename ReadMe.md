@@ -1,5 +1,11 @@
-# Front-end Web Design: Project 1
+# Front-end Web Design: Project 1 RESUBMISSION
 This website is a remix of the Contour 556 website for the Canberra Art Biennial. Aside from displaying the required coding techniques, the aim of this redesign was to enhance the clarity of the website's purpose. 
+
+## Resubmission
+This resubmission focused on using semantic HTML to better structure the pages, bring the HTML up to modern standards, and create more interpretable and professional code. Across the pages the header, main, and footer tags were used to structure the whole page and keep consistency across the pages. Then the content was clearly structured using section and article tags. As needed, the list, figure, image, blockcontent, and form tags were used for specific pages and their content - to streamline code (i.e. the browser automatically formats a form to some extent) and to create clarity and specificity. Finally, heading and paragraph tags were used across pages to keep the website feeling and sizing consistent. 
+
+This project could be improved by amalgamating some styling across pages, similar styling is reused across pages but have different classes. Also improving the general aesthetics and colours of the website would improve the feel and professionalism of the experience. 
+
 ## Low Fidelity Prototype
 The main design changes to the website were what content is included on the home page. The first text on the page is 'Canberra's Biennial Public Art Festival' - a to the point explanation of what the event is since the name Contour 556 was replaced. Although there is a call back to the original name with the title banner being a hand drawing of the topographical contour lines of Lake Burley Griffin (Contour 556), National Arboretum (Contour 656), and University of Canberra (Contour 606).
 
